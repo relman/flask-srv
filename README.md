@@ -5,10 +5,10 @@ Simple flask service example w/ deploy and test scripts
 Task description
 
 ### app.tar.gz
-Tarball'ed result
+Tarball'ed result - keeping it in repo because not everyone running Linux
 
 ### create-tar.sh
-Create tarball scripts
+Create tarball script
 
 ### deploy.sh
 Deploy service script (Ubuntu 14.04 LTS)
