@@ -1,0 +1,1 @@
+tar -zcvf app.tar.gz deploy.sh requirements.txt run-tests.sh service.py service_tests.py
