@@ -5,7 +5,7 @@ Simple flask service example w/ deploy and test scripts
 Task description
 
 ### app.tar.gz
-Tarball'ed result - keeping it in repo because not everyone running Linux
+Tarball'ed result - keep it in repo because not everyone running Linux
 
 ### create-tar.sh
 Create tarball script
