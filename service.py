@@ -22,7 +22,7 @@ def decrypt_message_post():
 def decrypt(message, passphrase):
     if not passphrase or not message:
         return jsonify({'Error': 'Passphrase and Message are required'}), 400
-    gpg = gnupg.GPG()
+    gpg = gnupg.GPG(homedir='/tmp')
     result = gpg.decrypt(message, passphrase=passphrase)
     if not result.ok:
         return jsonify({'Error': 'Unable to decrypt message'}), 400
