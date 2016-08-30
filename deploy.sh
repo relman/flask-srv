@@ -12,7 +12,7 @@ venv=$appdir/venv
 
 yum update -y
 yum install -y gcc gnupg python27-devel python27-pip python27-virtualenv
-yum install -y httpd24 mod24_wsgi-python27
+yum install -y httpd mod_wsgi-python27
 
 mkdir $appdir
 cp $srcdir/$servname $appdir
