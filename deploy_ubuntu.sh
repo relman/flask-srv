@@ -8,7 +8,7 @@ confpath=$confdir/$appname.conf
 reqsname=requirements.txt
 servname=service.py
 wsgipath=$appdir/wsgi.py
-venv=venv
+venv=$appdir/venv
 
 apt-get update
 apt-get install -y apache2 gnupg
@@ -16,7 +16,6 @@ apt-get install -y libapache2-mod-wsgi python-dev python-pip python-virtualenv
 
 a2enmod wsgi
 mkdir $appdir
-cd $appdir
 cp $srcdir/$servname $appdir
 
 virtualenv $venv
@@ -39,7 +38,7 @@ cat >$wsgipath <<EOL
 import sys
 
 sys.path.insert(0, '$appdir')
-sys.path.append('$appdir/$venv/lib/python2.7/site-packages')
+sys.path.append('$venv/lib/python2.7/site-packages')
 
 from service import app as application
 EOL
