@@ -20,6 +20,13 @@ def decrypt_message_post():
 
 
 def decrypt(message, passphrase):
+    """
+    Decrypt message with provided passphrase using GPG
+
+    :param message: Encrypted text
+    :param passphrase: Passphrase
+    :return: Decrypted message or error message (in json format)
+    """
     if not passphrase or not message:
         return jsonify({'Error': 'Passphrase and Message are required'}), 400
     gpg = gnupg.GPG(homedir='/tmp')

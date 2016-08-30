@@ -1,8 +1,8 @@
 # flask-srv
 Simple flask service example w/ deploy and test scripts
 
-### FlaskWebService.pdf
-Task description
+### FlaskWebServiceUpwork.doc
+Task description (updated)
 
 ### app.tar.gz
 Tarball'ed result - keep it in repo because not everyone running Linux

@@ -1,5 +1,5 @@
 #!/bin/bash
-# flask web service deploy script
+# Flask web service deploy script for Ubuntu 14.04.4
 appname=flask-service
 srcdir=/usr/local/src
 appdir=/var/www/$appname

@@ -1,5 +1,5 @@
 #!/bin/bash
-# flask web service deploy script
+# Flask web service deploy script for Amazon Linux 2016.03.3
 appname=flask-service
 srcdir=/usr/local/src
 appdir=/var/www/$appname

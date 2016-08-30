@@ -1,4 +1,5 @@
 #!/bin/bash
+# Flask web service test script for Amazon Linux 2016.03.3
 srcpath=/usr/local/src
 venv=$srcpath/venv
 

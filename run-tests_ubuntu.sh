@@ -1,4 +1,5 @@
 #!/bin/bash
+# Flask web service test script for Ubuntu 14.04.4
 srcpath=/usr/local/src
 venv=venv
 
