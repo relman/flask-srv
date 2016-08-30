@@ -6,14 +6,14 @@ app = Flask(__name__)
 
 
 @app.route('/decryptMessage', methods=['GET'])
-def create_csr_get():
+def decrypt_message_get():
     message = urllib.unquote(request.args.get('Message') or '')
     passphrase = urllib.unquote(request.args.get('Passphrase') or '')
     return decrypt(message, passphrase)
 
 
 @app.route('/decryptMessage', methods=['POST'])
-def create_csr_post():
+def decrypt_message_post():
     message = request.json.get('Message', None)
     passphrase = request.json.get('Passphrase', None)
     return decrypt(message, passphrase)
