@@ -37,7 +37,7 @@ cat >$wsgipath <<EOL
 import sys
 
 sys.path.insert(0, '$appdir')
-sys.path.append('$venv/lib/python2.7/site-packages')
+sys.path.insert(0, '$venv/lib/python2.7/site-packages')
 
 from service import app as application
 EOL
